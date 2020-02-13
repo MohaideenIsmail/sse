@@ -1,0 +1,7 @@
+
+<header>Operative</header>
+<div class="container">
+    <ng-container *ngFor="let item of components">
+        <app-button class="component" [item]="item" (onSelection)='toggleComponent($event)'  *ngIf="item.visible"></app-button>
+    </ng-container>
+</div>

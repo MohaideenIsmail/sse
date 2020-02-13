@@ -1,0 +1,8 @@
+<div class="button-container">
+  <div class="title">
+    {{item.name}}
+  </div>
+  <ul>
+    <li *ngFor="let item of buttons" (click)="onSelect(item)">{{item.name}}</li>
+  </ul>
+</div>

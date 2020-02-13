@@ -1,0 +1,38 @@
+
+ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+.container {
+    .component {
+        display: inline-block;
+        width: 50%;
+        background: #ddd;
+        padding: 10px;
+        box-sizing: border-box;
+        border: solid 1px #333;
+        
+        &:nth-child(1) {
+            background: #32CD32;
+        }
+        &:nth-child(2) {
+            background: #00CED1;
+        }
+        &:nth-child(3) {
+            background: #8A2BE2;
+        }
+        &:nth-child(4) {
+            background: #D2691E;
+        }
+    }
+}
